@@ -1,0 +1,67 @@
+body{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+nav{
+    position: fixed;
+    height: 400px;
+    width: 80px;
+    background-color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.nav-buttons{
+    color: white;    
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.b1:hover{
+    color: lightcyan;
+}
+
+.b2:hover{
+   color: palegreen; 
+}
+
+.b3:hover{
+   color: yellow; 
+}
+
+.b4:hover{
+   color: lightpink; 
+}
+
+.section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s1{
+    background-color: lightcyan ;
+}
+
+.s2{
+    background-color: palegreen;
+}
+
+.s3{
+    background-color: yellow; 
+}
+
+.s4{
+    background-color: lightpink; 
+}
