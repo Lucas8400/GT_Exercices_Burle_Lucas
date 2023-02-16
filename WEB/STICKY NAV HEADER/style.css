@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: Roboto, sans-serif;
+    height: 300vh;
 }
 
 header{
@@ -50,4 +51,12 @@ header{
 
 .btn-navbar:hover::after{
     width: 100%;
+}
+
+.vertical-navbar{
+    background-color: black;
+    height: 400px;
+    width: 80px;
+    position: fixed;
+    top: 30%;
 }
