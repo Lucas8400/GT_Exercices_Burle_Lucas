@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+}
+
+.sous-menu{
+    display: none;
+    position: absolute;
+    height: 300px;
+}
+
+.main::after{
+    content: "▼";
+    font-size: 20px;
+}
+
+.main:hover .sous-menu{
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+}
+
+.sous-categorie{
+    display: none;
+}
+
+.categorie:hover .sous-categorie{
+    display: block;
+}
+
+.menu{
+    height: 500px;
+}
