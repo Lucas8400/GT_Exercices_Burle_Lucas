@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.timeline-object {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.timeline-object.complete::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background-color: black;
+    left: 23px;
+    top: 50px;
+    transform: translateX(-50%);
+}
+
+.timeline-status {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.object-content{
+    position: relative;
+    left: 10px;
+}
+
+
+
