@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.carousel{
+    height: 500px;
+    width: 700px;
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.slide{
+    animation: slide 10s infinite;
+    display: flex;
+}
+
+img{
+    height: 500px;
+    width: 700px;
+}
+
+@keyframes slide{
+    0% {
+    transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-700px);
+    }
+    50% {
+        transform: translateX(-1400px);
+    }
+    75% {
+        transform: translateX(-2100px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
