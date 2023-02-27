@@ -1,0 +1,175 @@
+body{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+}
+
+header{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    position: fixed;
+}
+
+.logo_haltere{
+    height: 80px;
+    position: relative;
+    top: 10%;
+    left: 5%;
+}
+
+.ctn-navbar-buttons{
+    height: 30%;
+    width: 60%;
+    float: right;
+    position: relative;
+    top: 35%;
+    right: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn-navbar{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+    display: inline-block;
+}
+
+.btn-navbar::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #D91A1A;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 7px;
+}
+
+.btn-navbar:hover::after{
+    width: 100%;
+}
+
+.vertical-navbar{
+    background-color: black;
+    height: 400px;
+    width: 80px;
+    position: fixed;
+    top: 30%;
+}
+
+nav{
+    z-index: 99;
+    position: fixed;
+    height: 400px;
+    width: 80px;
+    background-color: black;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.nav-buttons{
+    color: white;    
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.nav-buttons::after{
+    content: "";
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: #D91A1A;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 7px;
+}
+
+.nav-buttons:hover::after{
+    width: 100%;
+}
+
+.section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s1{
+    background-color: lightcyan ;
+}
+
+.s2{
+    background-color: palegreen;
+}
+
+.s3{
+    background-color: yellow; 
+}
+
+.s4{
+    background-color: lightpink; 
+}
+
+
+
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 100%;
+}
+
+.logo_haltere_footer{
+    height: 150px;
+}
+
+.ctn-footer{
+    width: 170px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+
+@media(max-width:1200px){
+    .ctn-navbar-buttons{
+        display: none;
+    }
+    .logo_haltere{
+        left: 0;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    footer{
+        flex-wrap: wrap;
+        height: 350px;
+    }
+}
