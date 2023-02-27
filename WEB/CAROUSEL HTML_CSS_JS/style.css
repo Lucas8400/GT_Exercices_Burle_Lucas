@@ -15,7 +15,6 @@ body{
 
 .slide{
     display: flex;
-    animation: slide 10s infinite;
 }
 
 img{
